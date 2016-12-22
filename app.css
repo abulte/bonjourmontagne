@@ -1,0 +1,22 @@
+body {
+  font-family: 'Inconsolata', monospace;
+  background-image: url('lightpaperfibers_@2X.png');
+  background-size: 500px 300px;
+  /*background-image: url('wavegrid_@2X.png');
+  background-size: 100px 100px;*/
+  background-repeat: repeat;
+  text-align: center;
+}
+
+.image {
+  max-width: 90%;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.copyright {
+  font-size: 0.8em;
+  font-style: italic;
+}
