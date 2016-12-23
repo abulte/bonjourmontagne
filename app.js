@@ -46,18 +46,33 @@ function showMountain (idx) {
       el.target = '_blank'
     }
     el.innerHTML = mountain.copyright
-    document.querySelector('.copyright').innerHTML = ''
-    document.querySelector('.copyright').appendChild(el)
+    var copyright = document.querySelector('.copyright')
+    copyright.innerHTML = ''
+    copyright.appendChild(el)
   }
   document.querySelector('.description').innerHTML = mountain.description
   image.alt = mountain.description
+  document.querySelector('.date').innerHTML = moment(mountain.date).format('LL')
+}
+
+function getTomorrow () {
+  var now = new Date()
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1)
+}
+
+function filterByDate (mountains) {
+  var limit = getTomorrow()
+  return mountains.filter(function (m) {
+    return new Date(m.date) < limit
+  })
 }
 
 function init () {
+  moment.locale('fr')
   fetchMountains().then(function (mountains) {
     stopLoading()
-    allMountains = mountains.data
-    if (mountains.data.length > 0) {
+    allMountains = filterByDate(mountains.data)
+    if (allMountains.length > 0) {
       showMountain(0)
     }
   })

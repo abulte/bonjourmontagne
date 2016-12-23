@@ -6,6 +6,16 @@ body {
   background-size: 100px 100px;*/
   background-repeat: repeat;
   text-align: center;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+h1 {
+  margin-bottom: 5px;
 }
 
 .image {
@@ -18,9 +28,16 @@ body {
 }
 
 .pagination {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.previous {
+.date {
+  flex-grow: 1;
+}
+
+/*.previous {
   float: left;
   margin-left: 5%;
 }
@@ -28,7 +45,7 @@ body {
 .next {
   float: right;
   margin-right: 5%;
-}
+}*/
 
 .copyright {
   font-size: 0.8em;
