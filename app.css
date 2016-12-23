@@ -9,11 +9,25 @@ body {
 }
 
 .image {
+  margin-top: 10px;
   max-width: 90%;
 }
 
 .description {
   margin-top: 10px;
+}
+
+.pagination {
+}
+
+.previous {
+  float: left;
+  margin-left: 5%;
+}
+
+.next {
+  float: right;
+  margin-right: 5%;
 }
 
 .copyright {

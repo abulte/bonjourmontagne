@@ -9,6 +9,7 @@
   "author": "Alexandre Bulté",
   "license": "MIT",
   "dependencies": {
+    "normalize.css": "^5.0.0",
     "whatwg-fetch": "^2.0.1"
   }
 }

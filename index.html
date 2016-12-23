@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>Bonjour Montagne</title>
     <meta name="description" content="Une photo de montagne chaque jour">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <script src="node_modules/promise-polyfill/promise.min.js" charset="utf-8"></script>
     <script src="node_modules/whatwg-fetch/fetch.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
@@ -15,6 +17,10 @@
       Chargement...
     </div>
     <div class="container">
+      <div class="pagination">
+        <div class="next"><a href="#" onclick="next()">>></a></div>
+        <div class="previous"><a href="#" onclick="previous()"><<</a></div>
+      </div>
       <img src="" alt="" class="image">
       <div class="description"></div>
       <div class="copyright"></div>

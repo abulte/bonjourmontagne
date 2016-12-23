@@ -1,9 +1,16 @@
 {
   "data": [
     {
+      "id": 2,
+      "picture": "Aconcagua_13.JPG",
+      "description": "Aconcagua - Argentine (6 962 m)",
+      "copyright": "Mariordo",
+      "copyright_link": "https://commons.wikimedia.org/wiki/User:Mariordo"
+    },
+    {
       "id": 1,
       "picture": "everest-header.jpg",
-      "description": "Everest South Side (8 848 m)",
+      "description": "Everest South Side - Himalaya (8 848 m)",
       "copyright": "RMI",
       "copyright_link": "https://www.rmiguides.com"
     }
