@@ -71,10 +71,8 @@ function filterByDate (mountains) {
 }
 
 function handleHashChange (newHash, oldHash) {
-  if (newHash === '') {
-    return goTo('last')
-  }
-  showMountain(findById(newHash))
+  var mountain = newHash === '' ? allMountains[0] : findById(newHash)
+  showMountain(mountain)
 }
 
 function initHasher () {
@@ -93,7 +91,6 @@ function goTo (idx) {
   if (idx === 'last') {
     idx = allMountains[0].id
   }
-  console.log('goTo', idx)
   hasher.setHash(idx)
 }
 
