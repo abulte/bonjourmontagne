@@ -9,6 +9,9 @@
     <script src="node_modules/whatwg-fetch/fetch.js" charset="utf-8"></script>
     <script src="node_modules/moment/min/moment.min.js" charset="utf-8"></script>
     <script src="node_modules/moment/locale/fr.js" charset="utf-8"></script>
+    <script src="node_modules/signals/dist/signals.min.js" charset="utf-8"></script>
+    <script src="node_modules/hasher/dist/js/hasher.min.js" charset="utf-8"></script>
+    <script src="array-find.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="app.css">
@@ -32,9 +35,9 @@
     </div>
     <div class="container">
       <div class="pagination">
-        <div class="previous"><a href="#" onclick="previous()"><<</a></div>
-        <div class="date">2016-22-12</div>
-        <div class="next"><a href="#" onclick="next()">>></a></div>
+        <div class="previous"><a href="#" onclick="previous(event)"><<</a></div>
+        <div class="date"></div>
+        <div class="next"><a href="#" onclick="next(event)">>></a></div>
       </div>
       <img src="" alt="" class="image">
       <div class="description"></div>
