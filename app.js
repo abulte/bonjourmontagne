@@ -88,9 +88,8 @@ function findById (id) {
 }
 
 function goTo (idx) {
-  if (idx === 'last') {
-    idx = allMountains[0].id
-  }
+  ga('set', 'page', '/' + idx)
+  ga('send', 'pageview')
   hasher.setHash(idx)
 }
 
