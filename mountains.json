@@ -1,6 +1,14 @@
 {
   "data": [
     {
+      "date": "2016-12-25",
+      "id": 3,
+      "picture": "norway.jpg",
+      "description": "Store Lenangstinden (1 625 m) & Store Jægervasstinden (1 543 m) - Norway",
+      "copyright": "Ximonic (Simo Räsänen)",
+      "copyright_link": "https://commons.wikimedia.org/wiki/User:Ximonic"
+    },
+    {
       "date": "2016-12-24",
       "id": 2,
       "picture": "Aconcagua_13.JPG",

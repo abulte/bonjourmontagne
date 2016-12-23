@@ -61,6 +61,7 @@ function getTomorrow () {
 }
 
 function filterByDate (mountains) {
+  if (document.location.hostname === "localhost") return mountains
   var limit = getTomorrow()
   return mountains.filter(function (m) {
     return new Date(m.date) < limit
