@@ -1,6 +1,22 @@
 {
   "data": [
     {
+      "date": "2016-12-27",
+      "id": 5,
+      "picture": "26602842E613C2C089C58BBA893DC504.jpg",
+      "description": "Denali - Alaska (6 190 m)",
+      "copyright": "RMI - Michael Freedman",
+      "copyright_link": "https://www.rmiguides.com/denali/west-buttress"
+    },
+    {
+      "date": "2016-12-26",
+      "id": 4,
+      "picture": "06029DB318A79CC4F677D6386611F824.jpg",
+      "description": "Kilimanjaro - Tanzanie (3 962 m)",
+      "copyright": "Peak Planet",
+      "copyright_link": "http://www.peakplanet.com/10-things-about-mount-kilimanjaro-you-might-not-know/"
+    },
+    {
       "date": "2016-12-25",
       "id": 3,
       "picture": "norway.jpg",
@@ -20,7 +36,7 @@
       "date": "2016-12-23",
       "id": 1,
       "picture": "everest-header.jpg",
-      "description": "Everest South Side - Himalaya (8 848 m)",
+      "description": "Everest - Himalaya (8 848 m)",
       "copyright": "RMI",
       "copyright_link": "https://www.rmiguides.com"
     }
