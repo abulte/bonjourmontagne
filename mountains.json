@@ -1,6 +1,38 @@
 {
   "data": [
     {
+      "date": "2017-01-04",
+      "id": 12,
+      "picture": "AmaDablam.JPG",
+      "description": "Ama Dablam - Himalaya (6 812 m)",
+      "copyright": "Maik Psotta",
+      "copyright_link": "https://de.wikipedia.org/wiki/User:Postmaik"
+    },
+    {
+      "date": "2017-01-03",
+      "id": 11,
+      "picture": "01BookTalkK2.jpg",
+      "description": "K2 - Himalaya (8 611 m)",
+      "copyright": "Colin Monteath, Minden pictures",
+      "copyright_link": "http://news.nationalgeographic.com/2015/12/151213-k2-adventure-mountain-climb-china-pakistan-disaster-ngbooktalk/"
+    },
+    {
+      "date": "2017-01-02",
+      "id": 11,
+      "picture": "4DE1B9C382AD2394CA48E408F9F3EF6C.jpg",
+      "description": "Mont Fuji - Japon (3 776 m)",
+      "copyright": "Jurapon",
+      "copyright_link": "https://jurapon.wordpress.com/2013/07/28/defi-numero-9/"
+    },
+    {
+      "date": "2017-01-01",
+      "id": 10,
+      "picture": "858997.jpg",
+      "description": "Cho Oyu - Himalaya (8 201 m)",
+      "copyright": "gimpilator",
+      "copyright_link": "http://www.summitpost.org/users/gimpilator/25744"
+    },
+    {
       "date": "2016-12-31",
       "id": 9,
       "picture": "63785AE7FC5BE486192060579F85963C.jpg",
