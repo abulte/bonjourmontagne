@@ -1,0 +1,14 @@
+{
+  "name": "bonjourmontagne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre Bulté",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  }
+}
