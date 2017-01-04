@@ -45,7 +45,7 @@ def write_page(output, page, mountain, erase=False, index=False):
     if os.path.exists(page_path) and not erase:
         click.echo('Skipped already existing %s' % page_path)
     with open(page_path, 'w') as page_file:
-        page_file.write(page)
+        page_file.write(page.encode('utf8'))
 
 def fetch_source(source, tmp_dir):
     """Fetch the source archive and expand it into tmp_dir"""
