@@ -1,5 +1,6 @@
 output/*.html
 output/pictures
 !output/.gitkeep
+!output/pictures/.gitkeep
 tmp/*
 !tmp/.gitkeep
