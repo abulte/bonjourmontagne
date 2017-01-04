@@ -63,14 +63,18 @@ def fetch_source(source, tmp_dir):
         click.echo('Something went wrong while downloading source (%s)' % req.status_code)
 
 
-def copy_images(tmp_dir, output):
-    """Delete output images and copy the new images to the ouput directory"""
+def copy_data(tmp_dir, output):
+    """
+    Delete output images and copy the new images to the ouput directory
+    Also, copy the mountains.json file for the sharer to work.
+    """
     out_path = os.path.join(output, 'pictures')
     shutil.rmtree(out_path)
     shutil.copytree(
         os.path.join(tmp_dir, 'out', 'pictures'),
         out_path
     )
+    shutil.copy(os.path.join(tmp_dir, 'out', 'mountains.json'), output)
 
 @click.command()
 @click.option(
@@ -87,7 +91,7 @@ def generate(source, output, template, delete, skip_source):
     tmp_dir = './tmp'
     if not skip_source:
         fetch_source(source, tmp_dir)
-        copy_images(tmp_dir, output)
+        copy_data(tmp_dir, output)
     with open(os.path.join(tmp_dir, 'out', 'mountains.json')) as json_file:
         mountains = json.load(json_file)['data']
         # filter post-dated mountains
