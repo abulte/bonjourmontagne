@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ 'Bonjour Montagne -' + meta_title if meta_title else 'Bonjour Montagne' }}</title>
+    <meta name="description" content="{{ meta_description or 'Une photo de montagne chaque jour' }}">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="app.css">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="icon" sizes="196x196" href="favicon-196.png" type="image/png">
+    <meta name="msapplication-TileImage" content="favicon-144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+  </head>
+  <body>
+    <h1>Bonjour Montagne</h1>
+    <h4>Une photo de montagne chaque jour (ou presque)</h4>
+    <div class="container">
+      <div class="pagination">
+        <div class="previous">
+          {% if previous %}
+            <a href="{{ previous }}.html"><<</a>
+          {% endif %}
+        </div>
+        <div class="date">{{ date }}</div>
+        <div class="next">
+          {% if next %}
+            <a href="{{ next }}.html">>></a>
+          {% endif %}
+        </div>
+      </div>
+      <img src="pictures/{{ mountain.picture }}" alt="{{ mountain.description }}" class="image">
+      <div class="description">{{ mountain.description }}</div>
+      <div class="copyright">
+        {% if mountain.copyright_link %}
+          <a href="{{ mountain.copyright_link }}" target="_blank">{{ mountain.copyright }}</a>
+        {% else %}
+          {{ mountain.copyright }}
+        {% endif %}
+      </div>
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-89409350-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

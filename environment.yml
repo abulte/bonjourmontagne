@@ -1,0 +1,10 @@
+name: bjm-generator
+
+dependencies:
+  - python=3.5
+  - click
+  - Jinja2
+  - requests
+  - pip:
+    - ghp-import
+    - Arrow
